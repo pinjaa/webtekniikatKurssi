@@ -6,8 +6,17 @@ body {
     background-color: #05445E;
 }
 
+.dropdown-menu {
+    background-color: #05445E;
+    
+}
+.dropdown-menu > li > a {
+    color: white;
+    }
+
 li {
     padding: 10px;
+    font-size: 22px;
 }
 
 i {
@@ -34,8 +43,6 @@ p {
 .card {
     margin-bottom: 200px;
 }
-
-
 
 .container {
     padding-bottom: 2rem;
