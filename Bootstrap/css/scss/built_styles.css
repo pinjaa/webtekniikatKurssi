@@ -6,22 +6,26 @@ body {
 .navbar {
   background-color: #05445E;
 }
-
-.dropdown-menu {
+.navbar i {
+  padding: 10px;
+}
+.navbar .dropdown-menu {
   background-color: #05445E;
 }
-.dropdown-menu li a {
+.navbar .dropdown-menu li a {
   color: white;
 }
 
-li {
+.card {
+  margin-bottom: 200px;
+}
+.card li {
   list-style-type: "♡";
-  padding: 10px;
-  font-size: 22px;
 }
 
-i {
+li {
   padding: 10px;
+  font-size: 22px;
 }
 
 h1 {
@@ -39,10 +43,6 @@ p {
   background-color: #A4E8E0;
   border-radius: 10px;
   border: 1px solid black;
-}
-
-.card {
-  margin-bottom: 200px;
 }
 
 .container {
