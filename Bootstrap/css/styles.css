@@ -1,9 +1,9 @@
 body { 
-    background-color: #D0EFB1
+    background-color: #189AB4
     
 }
-nav {
-    background-color: #010400;
+.navbar {
+    background-color: #05445E;
 }
 
 li {
@@ -26,7 +26,7 @@ p {
 
 *[class^="col-"], .col, .card {
     margin: 10px;
-    background-color: #E0D3DE;
+    background-color: #A4E8E0;
     border-radius: 10px;
     border: 1px solid black;
 }
