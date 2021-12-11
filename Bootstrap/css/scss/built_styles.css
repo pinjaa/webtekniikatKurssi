@@ -1,0 +1,61 @@
+@charset "UTF-8";
+body {
+  background-color: #189AB4;
+}
+
+.navbar {
+  background-color: #05445E;
+}
+
+.dropdown-menu {
+  background-color: #05445E;
+}
+.dropdown-menu li a {
+  color: white;
+}
+
+li {
+  list-style-type: "♡";
+  padding: 10px;
+  font-size: 22px;
+}
+
+i {
+  padding: 10px;
+}
+
+h1 {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+p {
+  padding: 10px;
+  font-size: 26px;
+}
+
+*[class^=col-], .col, .card {
+  margin: 10px;
+  background-color: #A4E8E0;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.card {
+  margin-bottom: 200px;
+}
+
+.container {
+  padding-bottom: 2rem;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
+  padding-left: 1em;
+  text-align: center;
+}
+
+/*# sourceMappingURL=built_styles.css.map */
