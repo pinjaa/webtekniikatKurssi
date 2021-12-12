@@ -1,2 +1,2 @@
 # webtekniikatKurssi
-sisältää bootstrap tehtävän + CSS siihen sekä JS-tehtävän
+Sisältää Bootstrap tehtävän + CSS / SASS -tehtävän
