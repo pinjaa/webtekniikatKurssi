@@ -7,27 +7,25 @@ document.querySelector("#dateToday").innerHTML = today + "." + month + "." + yea
 
 //http request
 let xmlhttp = new XMLHttpRequest();
-let link ;
-let select = document.getElementById("city");
-let value = select.options[select.selectedIndex].value;
-select.addEventListener('change', function() {
-  console.log('You selected: ', this.value);
 
-if(this.value == "oulu") {
-  link = "http://api.openweathermap.org/data/2.5/weather?q=Oulu&units=metric&appid=8036cdada21ac979d3cc49a785eb76f1"
-} else if(this.value == "helsinki") {
-  link = "http://api.openweathermap.org/data/2.5/weather?q=Helsinki&units=metric&appid=8036cdada21ac979d3cc49a785eb76f1"
-} else if(this.value == "rovaniemi") {
-  link = "http://api.openweathermap.org/data/2.5/weather?q=Rovaniemi&units=metric&appid=8036cdada21ac979d3cc49a785eb76f1"
-} else if(this.value == "joensuu") {
-  link = "http://api.openweathermap.org/data/2.5/weather?q=Joensuu&units=metric&appid=8036cdada21ac979d3cc49a785eb76f1"
-}
+document.querySelector("#submitButton").addEventListener("click", function() {
+
+  let city = document.getElementById("cityInput").value
+  
+  if(city == ""){
+    alert("Please insert a city")
+  }
+
+  else {
+  let link = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=8036cdada21ac979d3cc49a785eb76f1`
+  xmlhttp.open("GET", link ,true);
 
 
-xmlhttp.open("GET", link ,true);
-
-
-xmlhttp.send();
+  xmlhttp.send();
+  }
+  
+  document.getElementById("cityName").innerHTML = city[0].toUpperCase()
+ + city.substring(1)
 });
 //event handler
 xmlhttp.onreadystatechange=function() {
@@ -35,20 +33,23 @@ xmlhttp.onreadystatechange=function() {
 
         //JSON response parse
         let weather = JSON.parse(xmlhttp.responseText);
+
+        let iconcode = weather.weather[0].icon;
+        let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+        
         
         //temperature
-        document.querySelector("#tempButton").addEventListener("click", function() {
           document.getElementById("temperature").innerHTML = Math.round(weather.main.temp) + "&deg;" + "C";
           document.getElementById("feelsLike").innerHTML = Math.round(weather.main.feels_like) + "&deg;" + "C";
-        });
-
+  
         //weather
-        document.querySelector("#weatherButton").addEventListener("click", function() {
           document.getElementById("weather").innerHTML = weather.weather[0].main + ": " + weather.weather[0].description;
-      });
+          document.getElementById("weatherImg").src = iconurl;
+      
         
         
   }
+
 }
 
 
