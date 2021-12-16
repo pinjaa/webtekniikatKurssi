@@ -14,26 +14,25 @@
             <h1>Weather today <span id="dateToday"></span></h1>
         </header>
         <div id="cityDiv">
-            <h2>City:</h2>
-            <label for="city">Select city: </label>
-            <select name="city" id="city">
-                <option value="selectCity">Select city</option>
-                <option value="oulu">Oulu</option>
-                <option value="helsinki">Helsinki</option>
-                <option value="rovaniemi">Rovaniemi</option>
-                <option value="joensuu">Joensuu</option>
-            </select>
+            <h2><span id="cityName">City</span>:</h2>
+            <p>Write a city</p>
+            <div class="row">
+                <label for="">City: <input type="text" id="cityInput"></label>
+                <button type="button" id="submitButton">Submit</button>
+            </div>
         </div>
         <div id="tempDiv">
             <h2>Temperature: </h2>
             <p>Temperature now: <span id="temperature"></span> </p>
             <p >Feels like: <span id="feelsLike"></span> </p>
-            <button id="tempButton">Check</button>
+            
         </div>
         <div id="weatherDiv">
             <h2>Weather: </h2>
+            <img id="weatherImg" style="width: 50px;" src="" alt="">
             <p id="weather"></p>
-            <button id="weatherButton">Check</button>
+            
+            
         </div>
         
         <footer>
