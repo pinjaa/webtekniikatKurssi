@@ -1,14 +1,16 @@
+$darkblue: #05445E;
+
 body { 
     background-color: #189AB4
     
 }
 .navbar {
-    background-color: #05445E;
+    background-color: $darkblue;
     i {
         padding: 10px;
     }
     .dropdown-menu {
-        background-color: #05445E;
+        background-color: $darkblue;
         li a {
             color: white;
             
@@ -36,7 +38,14 @@ h1 {
 p {
     padding: 10px;
     font-size: 26px;
+
+    a {
+        text-decoration: none;
+        color: $darkblue;
+    }
 }
+
+
 
 *[class^="col-"], .col, .card {
     margin: 10px;

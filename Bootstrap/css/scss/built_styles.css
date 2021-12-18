@@ -37,6 +37,10 @@ p {
   padding: 10px;
   font-size: 26px;
 }
+p a {
+  text-decoration: none;
+  color: #05445E;
+}
 
 *[class^=col-], .col, .card {
   margin: 10px;
