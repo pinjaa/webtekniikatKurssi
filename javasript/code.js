@@ -17,7 +17,7 @@ document.querySelector("#submitButton").addEventListener("click", function() {
   }
 
   else {
-  let link = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=8036cdada21ac979d3cc49a785eb76f1`
+  let link = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=8036cdada21ac979d3cc49a785eb76f1`
   xmlhttp.open("GET", link ,true);
 
 
@@ -35,7 +35,7 @@ xmlhttp.onreadystatechange=function() {
         let weather = JSON.parse(xmlhttp.responseText);
 
         let iconcode = weather.weather[0].icon;
-        let iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
+        let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
         
         
         //temperature
