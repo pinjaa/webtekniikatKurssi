@@ -1,0 +1,28 @@
+html body {
+    background-color: #05445E;
+  }
+  
+.navbar {
+    background-color: #189AB4;
+    margin-bottom: 3rem;
+}
+.navbar i {
+    padding: 10px;
+}
+
+div a {
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.col {
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #A4E8E0;
+    height: 200px;
+    border: 2px solid #05445E;
+    border-radius: 5px;
+}
