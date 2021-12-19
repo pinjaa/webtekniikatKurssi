@@ -31,15 +31,15 @@ body {
   list-style-type: "♡";
 }
 
-.col-md button {
+.muksuvisa button {
   margin: 20px;
   border-radius: 5px;
 }
-.col-md button a {
+.muksuvisa button a {
   text-decoration: none;
   color: black;
 }
-.col-md button a :hover {
+.muksuvisa button a :hover {
   color: #05445E;
 }
 
