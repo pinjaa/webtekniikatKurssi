@@ -51,52 +51,83 @@
     </nav>
     
      <!-- Main content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md" >
-                <h1>About me</h1>
-                <p>My name is Pinja Åman and I am 27 years old. I have been living in Oulu for 8 years now, before that I lived in Lieksa where I was born. I was a stay-home mom for 3 years but now I have started studying at Oulu University of Applied Sciences. </p>
-                <p>I have noticed during this autumn that I really like programming and web developing!</p>
-            </div>  
+
+    <div class="accordion w-75 mx-auto mt-5" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingZero">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseZero" aria-expanded="true" aria-controls="panelsStayOpen-collapseZero">
+            About me
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseZero" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingZero">
+          <div class="accordion-body">
+            <p>My name is Pinja Åman and I am 27 years old. I have been living in Oulu for 8 years now, before that I lived in Lieksa where I was born. I was a stay-home mom for 3 years but now I have started studying at Oulu University of Applied Sciences. </p>
+            <p>I have noticed during this autumn that I really like programming and web developing!</p>
+          </div>
         </div>
-        <div class="card-group">
-            <div class="card">
-            <div class="card-body">
-                <h1 class="card-title">Hobbies</h1>
-                <p class="card-text">I love:</p> 
-                <ul>
-                  <li>playing videogames</li>
-                  <li>playing boardgames</li>
-                  <li>watching series and movies</li>
-                  <li>different kinds of crafts</li>
-                  <li>baking</li>
-                  <li>cooking and looking for new recipes</li>
-                </ul> 
-            </div>
-            </div>
-            <div class="card">
-            <div class="card-body">
-                <h1 class="card-title">My family</h1>
-                <p class="card-text">I have a husband, his name is Eetu. We met 10 years ago and have been married for 4 years now.</p>
-                <p>We have a daughter, Aria, who is 3 years old.</p>
-            </div>
-            </div>
-            <div class="card">
-            <div class="card-body">
-                <h1 class="card-title">Studying</h1>
-                <p class="card-text">In August 2021 I started studying Business Information Systems at Oulu University of Applied Sciences. </p>
-                <p>Programming and web developing both seem to be passion for me and it has been fun studying everything about them!</p>
-            </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                <h1 class="card-title">Working</h1>
-                <p class="card-text">I don't have any work experience in programming or web developing yet.</p>
-                <p>I have worked in a kindergarten for 2 years and was home with my daughter almost 3 years before I started studying. </p>
-                </div>
-            </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+            My hobbies
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <ul>
+              <li>&nbsp; playing videogames</li>
+              <li>&nbsp; playing boardgames</li>
+              <li>&nbsp; watching series and movies</li>
+              <li>&nbsp; reading books and listening audiobooks</li>
+              <li>&nbsp; different kinds of crafts</li>
+              <li>&nbsp; baking</li>
+              <li>&nbsp; cooking and looking for new recipes</li>
+            </ul> 
+          </div>
         </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            My family
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            I have a husband, his name is Eetu. We met 10 years ago and have been married for 4 years now.
+            We have a daughter, Aria, who is 3 years old.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            Studying
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            In August 2021 I started studying Business Information Systems at Oulu University of Applied Sciences.
+            Programming and web developing both seem to be passion for me and it has been fun studying everything about them!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+            Working
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+          <div class="accordion-body">
+            I don't have any work experience in programming or web developing yet.
+            I have worked in a kindergarten for 2 years and was home with my daughter almost 3 years before I started studying.
+          </div>
+        </div>
+      </div>
     </div>
+
+
     <footer class="footer mt-auto">
       <p>2021 &copy; Pinja Åman</p>
     </footer>
