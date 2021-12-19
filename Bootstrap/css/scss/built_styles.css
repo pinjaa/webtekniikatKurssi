@@ -31,15 +31,15 @@ body {
   list-style-type: "♡";
 }
 
-button {
+.col-md button {
   margin: 20px;
   border-radius: 5px;
 }
-button a {
+.col-md button a {
   text-decoration: none;
   color: black;
 }
-button a :hover {
+.col-md button a :hover {
   color: #05445E;
 }
 
