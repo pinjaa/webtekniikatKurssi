@@ -1,13 +1,17 @@
 $darkblue: #05445E;
 
 body { 
-    background-color: #189AB4
+    background-color: #189AB4;
     
 }
 .navbar {
     background-color: $darkblue;
     i {
         padding: 10px;
+    }
+    li {
+        padding: 10px;
+        font-size: 22px;
     }
     .dropdown-menu {
         background-color: $darkblue;
@@ -18,16 +22,32 @@ body {
     }
 }
 
-.card {
-    margin-bottom: 200px;
+.accordion-item {
+    background-color: #A4E8E0;
+    font-size: 24px;
+
+    button {
+        font-size: 22px;
+       
+    }
+    
     li {
         list-style-type: "\2661";
     }
 }
 
-li {
-    padding: 10px;
-    font-size: 22px;
+button {
+    margin: 20px;
+    border-radius: 5px;
+
+    a {
+        text-decoration: none;
+        color: black;
+        
+        :hover {
+            color: $darkblue;
+        }
+    }
 }
 
 h1 {
@@ -37,12 +57,9 @@ h1 {
 
 p {
     padding: 10px;
-    font-size: 26px;
+    font-size: 24px;
 
-    a {
-        text-decoration: none;
-        color: $darkblue;
-    }
+    
 }
 
 

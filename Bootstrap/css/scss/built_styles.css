@@ -9,6 +9,10 @@ body {
 .navbar i {
   padding: 10px;
 }
+.navbar li {
+  padding: 10px;
+  font-size: 22px;
+}
 .navbar .dropdown-menu {
   background-color: #05445E;
 }
@@ -16,16 +20,27 @@ body {
   color: white;
 }
 
-.card {
-  margin-bottom: 200px;
+.accordion-item {
+  background-color: #A4E8E0;
+  font-size: 24px;
 }
-.card li {
+.accordion-item button {
+  font-size: 22px;
+}
+.accordion-item li {
   list-style-type: "♡";
 }
 
-li {
-  padding: 10px;
-  font-size: 22px;
+button {
+  margin: 20px;
+  border-radius: 5px;
+}
+button a {
+  text-decoration: none;
+  color: black;
+}
+button a :hover {
+  color: #05445E;
 }
 
 h1 {
@@ -35,11 +50,7 @@ h1 {
 
 p {
   padding: 10px;
-  font-size: 26px;
-}
-p a {
-  text-decoration: none;
-  color: #05445E;
+  font-size: 24px;
 }
 
 *[class^=col-], .col, .card {
