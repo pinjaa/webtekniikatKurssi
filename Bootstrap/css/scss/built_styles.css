@@ -16,19 +16,22 @@ body {
 .navbar .dropdown-menu {
   background-color: #05445E;
 }
-.navbar .dropdown-menu li a {
+.navbar .dropdown-menu li > * {
   color: white;
 }
 
 .accordion-item {
   background-color: #A4E8E0;
   font-size: 24px;
-}
-.accordion-item button {
-  font-size: 22px;
+  border-radius: 5px;
 }
 .accordion-item li {
   list-style-type: "♡";
+}
+.accordion-item .accordion-button {
+  font-size: 22px;
+  background-color: #05445E;
+  color: white;
 }
 
 .muksuvisa button {
@@ -43,18 +46,25 @@ body {
   color: #05445E;
 }
 
+.carousel {
+  margin-top: 5rem;
+}
+.carousel .carousel-item > img {
+  height: 600px;
+}
+
 h1 {
   margin-top: 20px;
   padding: 10px;
 }
-
-p {
+h1 ~ p {
   padding: 10px;
   font-size: 24px;
 }
 
-*[class^=col-], .col, .card {
+*[class^=col-], .col {
   margin: 10px;
+  margin-top: 3rem;
   background-color: #A4E8E0;
   border-radius: 10px;
   border: 1px solid black;
@@ -71,6 +81,10 @@ p {
   width: 100%;
   padding-left: 1em;
   text-align: center;
+}
+.footer p {
+  margin-top: 5rem;
+  font-size: 22px;
 }
 
 /*# sourceMappingURL=built_styles.css.map */
