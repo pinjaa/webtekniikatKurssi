@@ -1,4 +1,6 @@
 # webtekniikatKurssi
+
+Sisältö:
 - Bootstrap tehtävä + CSS / SASS -tehtävä
-- Javascript tehtävä
-- etusivu github pagesia varten
+- JavaScript tehtävä
+- Etusivu GitHub Pagesia varten
